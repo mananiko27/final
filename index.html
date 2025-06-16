@@ -3,51 +3,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mARTa Handcrafts</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Dancing Script', cursive;
-      color: #2f6633;
-      line-height: 1.6;
+      color: #2e7d32;
+      background: url('texture.jpg') no-repeat center center fixed;
+      background-size: cover;
     }
     header {
-      padding: 1rem 2rem;
       display: flex;
       align-items: center;
+      padding: 1rem 2rem;
     }
-    .logo {
-      height: 100px;
+    header img {
+      height: 90px;
+      margin-right: 1rem;
     }
     nav {
       display: flex;
       gap: 1.7rem;
-      margin-left: 1rem;
     }
     nav a {
       text-decoration: none;
-      color: #2f6633;
-      font-size: 1.6rem;
-      font-weight: bold;
+      color: #2e7d32;
+      font-size: 1.7rem;
     }
-    .section {
-      padding: 2rem;
-      min-height: 100vh;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-    #home { background-image: url('texture.jpg'); }
-    #marta { background-image: url('texture2.jpg'); }
-    #handmade { background-image: url('texture.jpg'); }
-    #workshops { background-image: url('texture2.jpg'); }
-    #contact { background-image: url('texture.jpg'); }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="mARTa Logo" class="logo">
+    <img src="logo.jpg" alt="mARTa logo">
     <nav>
       <a href="#home">Home</a>
       <a href="#marta">mARTa</a>
@@ -57,10 +46,10 @@
     </nav>
   </header>
 
-  <section id="home" class="section"></section>
-  <section id="marta" class="section"></section>
-  <section id="handmade" class="section"></section>
-  <section id="workshops" class="section"></section>
-  <section id="contact" class="section"></section>
+  <section id="home" style="min-height:100vh;"></section>
+  <section id="marta" style="min-height:100vh; background: url('texture2.jpg') no-repeat center center fixed; background-size: cover;"></section>
+  <section id="handmade" style="min-height:100vh; background: url('texture.jpg') no-repeat center center fixed; background-size: cover;"></section>
+  <section id="workshops" style="min-height:100vh; background: url('texture2.jpg') no-repeat center center fixed; background-size: cover;"></section>
+  <section id="contact" style="min-height:100vh; background: url('texture.jpg') no-repeat center center fixed; background-size: cover;"></section>
 </body>
 </html>
