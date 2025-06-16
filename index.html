@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>mARTa Handcrafts</title>
   <style>
-    html {
-      scroll-padding-top: 120px; /* space for fixed nav */
-    }
     body {
       margin: 0;
       font-family: 'Georgia', serif;
@@ -20,13 +17,8 @@
       padding: 1rem 2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      background: transparent;
+      justify-content: flex-start;
+      gap: 2rem;
     }
 
     nav {
@@ -36,13 +28,13 @@
 
     nav a {
       text-decoration: none;
-      color: green;
+      color: #3c6e47;
       font-weight: bold;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     .section {
-      padding: 6rem 2rem 2rem 2rem; /* padding top for nav space */
+      padding: 2rem;
       min-height: 100vh;
       background-size: cover;
       background-attachment: fixed;
@@ -67,15 +59,11 @@
     #contact {
       background-image: url('texture.jpg');
     }
-
-    header img {
-      height: 100px;
-    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="mARTa logo">
+    <img src="logo.jpg" alt="mARTa logo" style="height:100px;">
     <nav>
       <a href="#home">Home</a>
       <a href="#marta">mARTa</a>
