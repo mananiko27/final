@@ -15,17 +15,29 @@
       display: flex;
       align-items: center;
       padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: transparent;
     }
     nav {
       display: flex;
       gap: 2rem;
-      margin-left: 1rem; /* Move nav to the left */
+      margin-left: 1rem; /* slight move to the left */
     }
     nav a {
       text-decoration: none;
       color: green;
-      font-size: 1.5rem; /* Larger font */
+      font-size: 1.6rem; /* slightly larger font */
       font-weight: bold;
+    }
+    .logo {
+      height: 100px;
+    }
+    html {
+      scroll-padding-top: 120px; /* prevent hiding under fixed header */
     }
     .section {
       min-height: 100vh;
@@ -42,7 +54,7 @@
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="mARTa Logo" style="height:100px; background:transparent;">
+    <img src="logo.jpg" alt="mARTa Logo" class="logo">
     <nav>
       <a href="#home">Home</a>
       <a href="#marta">mARTa</a>
