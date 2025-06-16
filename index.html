@@ -3,52 +3,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>mARTa Handcrafts</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      color: #4a4a4a;
+      font-family: 'Dancing Script', cursive;
+      color: #2f6633;
+      line-height: 1.6;
     }
     header {
+      padding: 1rem 2rem;
       display: flex;
       align-items: center;
-      padding: 1rem 2rem;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      background: transparent;
     }
     .logo {
       height: 100px;
-      margin-right: 1rem;
     }
     nav {
       display: flex;
-      gap: 1.7rem; /* fine-tuned gap */
-      align-items: center;
-      transform: translateX(-30px); /* maintain slight left shift */
+      gap: 1.7rem;
+      margin-left: 1rem;
     }
     nav a {
       text-decoration: none;
-      color: green;
-      font-family: 'Dancing Script', cursive;
+      color: #2f6633;
+      font-size: 1.6rem;
       font-weight: bold;
-      font-size: 1.8rem;
-      text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
-    }
-    html {
-      scroll-padding-top: 120px;
     }
     .section {
+      padding: 2rem;
       min-height: 100vh;
       background-size: cover;
       background-attachment: fixed;
-      padding: 2rem;
     }
     #home { background-image: url('texture.jpg'); }
     #marta { background-image: url('texture2.jpg'); }
