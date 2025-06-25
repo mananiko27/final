@@ -1,46 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>mARTa Handcrafts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Georgia', serif;
       color: white;
-      background-color: #f4f1ed;
-      scroll-behavior: smooth;
+      line-height: 1.6;
     }
 
     header {
       position: fixed;
       top: 0;
-      left: 0;
       width: 100%;
-      padding: 1rem 2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
+      padding: 1rem 2rem;
+      z-index: 1000;
       background: transparent;
-      z-index: 999;
+    }
+
+    header img {
+      height: 90px;
+      margin-right: 2rem;
     }
 
     nav {
       display: flex;
-      gap: 2rem;
+      gap: 1.7rem;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.4rem;
     }
 
     nav a {
       text-decoration: none;
       color: white;
-      font-size: 1.5rem;
       font-weight: bold;
     }
 
     .section {
-      padding: 6rem 2rem 2rem 2rem;
+      padding: 7rem 2rem 2rem 2rem;
       min-height: 100vh;
       background-size: cover;
       background-attachment: fixed;
@@ -65,16 +70,11 @@
     #contact {
       background-image: url('texture.jpg');
     }
-
-    .text-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="mARTa logo" style="height:90px;">
+    <img src="logo.jpg" alt="mARTa logo">
     <nav>
       <a href="#home">Home</a>
       <a href="#marta">mARTa</a>
@@ -85,36 +85,28 @@
   </header>
 
   <section id="home" class="section">
-    <div class="text-container">Space for love, art and childhood wonder.</div>
+    <!-- Home section remains empty for now -->
   </section>
 
   <section id="marta" class="section">
-    <div class="text-container">
-      <h2>mARTa</h2>
-      <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
-      <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.</p>
-      <p>This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
-      <p>Every piece in mARTa is crafted with care, heart, and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to playful abstractions—these creations are lively, heartfelt, and full of emotions.</p>
-      <p>My hope is to create decorations that evoke new sensations, yet take you back - to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
-    </div>
+    <h2>mARTa</h2>
+    <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+    <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.</p>
+    <p>This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
+    <p>Every piece in mARTa is crafted with care, heart, and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to playful abstractions—these creations are lively, heartfelt, and full of emotions.</p>
+    <p>My hope is to create decorations that evoke new sensations, yet take you back - to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
   </section>
 
   <section id="handmade" class="section">
-    <div class="text-container">
-      <h2>Handmade</h2>
-    </div>
+    <h2>Handmade</h2>
   </section>
 
   <section id="workshops" class="section">
-    <div class="text-container">
-      <h2>Workshop Corner</h2>
-    </div>
+    <h2>Workshop Corner</h2>
   </section>
 
   <section id="contact" class="section">
-    <div class="text-container">
-      <h2>Contact</h2>
-    </div>
+    <h2>Contact</h2>
   </section>
 </body>
 </html>
