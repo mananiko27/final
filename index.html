@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>mARTa Handcrafts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -17,7 +17,7 @@
     header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       padding: 1rem 2rem;
       position: fixed;
       top: 0;
@@ -26,30 +26,34 @@
       background: transparent;
     }
 
+    .logo {
+      height: 90px;
+      background: transparent;
+      margin-right: 2rem;
+      flex-shrink: 0;
+    }
+
     nav {
       display: flex;
-      justify-content: space-around;
       align-items: center;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      max-width: 80%;
       flex-grow: 1;
     }
 
     nav a {
       text-decoration: none;
       color: #3e9b7f !important;
-      font-size: 1.6rem;
+      font-size: 2.2rem;
       font-weight: bold;
       font-family: 'Dancing Script', cursive;
       transition: color 0.3s ease;
+      white-space: nowrap;
     }
 
     nav a:hover {
       color: #2f7d67;
-    }
-
-    .logo {
-      height: 90px;
-      background: transparent;
-      flex-shrink: 0;
     }
 
     .section {
