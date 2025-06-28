@@ -17,7 +17,7 @@
     header {
       display: flex;
       flex-direction: row;
-      align-items: flex-end; /* align logo and nav at the bottom */
+      align-items: flex-end;
       justify-content: flex-start;
       padding: 1rem 2rem;
       position: fixed;
@@ -30,19 +30,18 @@
     .logo {
       height: 90px;
       margin-right: 3rem;
-      flex-shrink: 0;
+      display: block;
     }
 
     nav {
       display: flex;
       align-items: flex-end;
-      gap: 5rem;
-      flex-wrap: nowrap;
+      gap: 6rem; /* increased spread */
     }
 
     nav a {
       text-decoration: none;
-      color: #72d6bb !important;
+      color: #409e82 !important; /* slightly darker green */
       font-size: 1.9rem;
       font-weight: bold;
       font-family: 'Dancing Script', cursive;
@@ -51,7 +50,7 @@
     }
 
     nav a:hover {
-      color: #48a892;
+      color: #2e7f6a;
     }
 
     .section {
