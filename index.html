@@ -16,8 +16,7 @@
 
     header {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      align-items: flex-start;
       padding: 1rem 2rem;
       position: fixed;
       top: 0;
@@ -35,16 +34,16 @@
 
     nav {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
+      padding-top: 30px;
       flex-wrap: nowrap;
-      gap: 2.2rem;
-      max-width: 80%;
+      gap: 3rem;
       flex-grow: 1;
     }
 
     nav a {
       text-decoration: none;
-      color: #3e9b7f !important;
+      color: #5dc2a6 !important; /* lighter green */
       font-size: 1.9rem;
       font-weight: bold;
       font-family: 'Dancing Script', cursive;
@@ -53,7 +52,7 @@
     }
 
     nav a:hover {
-      color: #2f7d67;
+      color: #3a8f7c;
     }
 
     .section {
