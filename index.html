@@ -16,8 +16,9 @@
 
     header {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      flex-direction: row;
+      align-items: flex-end; /* align logo and nav at the bottom */
+      justify-content: flex-start;
       padding: 1rem 2rem;
       position: fixed;
       top: 0;
@@ -28,18 +29,15 @@
 
     .logo {
       height: 90px;
-      background: transparent;
-      margin-bottom: 0.2rem;
+      margin-right: 3rem;
+      flex-shrink: 0;
     }
 
     nav {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-top: 0.5rem;
-      gap: 3rem;
-      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 5rem;
+      flex-wrap: nowrap;
     }
 
     nav a {
