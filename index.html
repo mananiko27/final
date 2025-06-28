@@ -3,52 +3,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>mARTa Handcrafts</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      color: white;
+      font-family: 'Dancing Script', cursive;
+      color: #336633;
       line-height: 1.6;
     }
 
     header {
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       position: fixed;
       top: 0;
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 1rem 2rem;
       z-index: 1000;
-      background: transparent;
-    }
-
-    header img {
-      height: 90px;
-      margin-right: 2rem;
+      background-color: transparent;
     }
 
     nav {
       display: flex;
       gap: 1.7rem;
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.4rem;
+      flex: 1;
+      justify-content: space-evenly;
     }
 
     nav a {
       text-decoration: none;
-      color: white;
+      color: #336633;
+      font-size: 1.4rem;
       font-weight: bold;
     }
 
     .section {
-      padding: 7rem 2rem 2rem 2rem;
+      padding: 5rem 2rem 2rem 2rem;
       min-height: 100vh;
       background-size: cover;
       background-attachment: fixed;
+      scroll-margin-top: 120px;
     }
 
     #home {
@@ -70,11 +67,16 @@
     #contact {
       background-image: url('texture.jpg');
     }
+
+    .logo {
+      height: 100px;
+      background: transparent;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="mARTa logo">
+    <img src="logo.jpg" alt="mARTa logo" class="logo" />
     <nav>
       <a href="#home">Home</a>
       <a href="#marta">mARTa</a>
@@ -85,7 +87,7 @@
   </header>
 
   <section id="home" class="section">
-    <!-- Home section remains empty for now -->
+    <!-- Home section empty for now -->
   </section>
 
   <section id="marta" class="section">
@@ -99,14 +101,17 @@
 
   <section id="handmade" class="section">
     <h2>Handmade</h2>
+    <!-- Add content here -->
   </section>
 
   <section id="workshops" class="section">
     <h2>Workshop Corner</h2>
+    <!-- Add content here -->
   </section>
 
   <section id="contact" class="section">
     <h2>Contact</h2>
+    <!-- Add content here -->
   </section>
 </body>
 </html>
