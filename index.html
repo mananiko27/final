@@ -28,18 +28,22 @@
 
     nav {
       display: flex;
-      justify-content: center;
-      gap: 2rem;
+      justify-content: space-around;
+      align-items: center;
       flex-grow: 1;
-      margin-left: 2rem;
     }
 
     nav a {
       text-decoration: none;
-      color: #2f4f2f !important;
-      font-size: 1.4rem;
+      color: #3e9b7f !important;
+      font-size: 1.6rem;
       font-weight: bold;
       font-family: 'Dancing Script', cursive;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #2f7d67;
     }
 
     .logo {
