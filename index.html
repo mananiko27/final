@@ -34,10 +34,10 @@
     }
 
     nav {
-      margin-top: 38px;
       display: flex;
       align-items: flex-start;
-      gap: 4.5rem; /* tightened spacing */
+      gap: 2.8rem;
+      margin-top: 38px;
     }
 
     nav a {
@@ -48,6 +48,40 @@
       font-family: 'Dancing Script', cursive;
       transition: color 0.3s ease;
       white-space: nowrap;
+      display: inline-block;
+      position: relative;
+      padding-left: 8px;
+    }
+
+    nav a .flower {
+      width: 20px;
+      height: auto;
+      position: absolute;
+    }
+
+    nav a.home .flower {
+      top: -18px;
+      left: 2px;
+    }
+
+    nav a.marta .flower {
+      top: -22px;
+      left: 10px;
+    }
+
+    nav a.handmade .flower {
+      top: -16px;
+      left: 38px;
+    }
+
+    nav a.workshops .flower {
+      top: -20px;
+      left: 5px;
+    }
+
+    nav a.contact .flower {
+      top: -15px;
+      left: 1px;
     }
 
     nav a:hover {
@@ -87,11 +121,11 @@
   <header>
     <img src="logo.jpg" alt="mARTa logo" class="logo" />
     <nav>
-      <a href="#home">Home</a>
-      <a href="#marta">mARTa</a>
-      <a href="#handmade">Handmade</a>
-      <a href="#workshops">Workshop Corner</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" class="home"><img src="886f5a02-d80c-4ecf-aec5-eea4acc60b18.png" class="flower" alt="">Home</a>
+      <a href="#marta" class="marta"><img src="886f5a02-d80c-4ecf-aec5-eea4acc60b18.png" class="flower" alt="">mARTa</a>
+      <a href="#handmade" class="handmade"><img src="886f5a02-d80c-4ecf-aec5-eea4acc60b18.png" class="flower" alt="">Handmade</a>
+      <a href="#workshops" class="workshops"><img src="886f5a02-d80c-4ecf-aec5-eea4acc60b18.png" class="flower" alt="">Workshop Corner</a>
+      <a href="#contact" class="contact"><img src="886f5a02-d80c-4ecf-aec5-eea4acc60b18.png" class="flower" alt="">Contact</a>
     </nav>
   </header>
 
